@@ -108,7 +108,7 @@ protected:
   void ThreadedComputeCosineOfPhase(
       const OutputImageRegionType & outputRegionForThread );
 private:
-  bool                 m_ApplySoftThreshold;
+  bool                 m_ApplySoftThreshold{true};
   OutputImagePixelType m_NumOfSigmas;
   OutputImagePixelType m_MeanAmp;
   OutputImagePixelType m_SigmaAmp;

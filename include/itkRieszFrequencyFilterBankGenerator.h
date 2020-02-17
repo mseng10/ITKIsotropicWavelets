@@ -119,7 +119,7 @@ protected:
   void DynamicThreadedGenerateData(const OutputImageRegionType & threadRegion) override;
 
 private:
-  unsigned int         m_Order;
+  unsigned int         m_Order{0};
   RieszFunctionPointer m_Evaluator;
 }; // end of class
 } // end namespace itk

@@ -33,11 +33,8 @@ template< typename TInputImage,
 WaveletFrequencyForwardUndecimated< TInputImage, TOutputImage,
   TWaveletFilterBank >
 ::WaveletFrequencyForwardUndecimated()
-  : m_Levels(1),
-  m_HighPassSubBands(1),
-  m_TotalOutputs(1),
-  m_ScaleFactor(2),
-  m_StoreWaveletFilterBankPyramid(false)
+  
+  
 {
   this->SetNumberOfRequiredInputs(1);
   m_WaveletFilterBank = WaveletFilterBankType::New();

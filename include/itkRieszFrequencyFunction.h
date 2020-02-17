@@ -198,7 +198,7 @@ protected:
   void PrintSelf(std::ostream & os, Indent indent) const override;
 
 private:
-  unsigned int m_Order;
+  unsigned int m_Order{0};
   SetType      m_Indices;
 };
 } // end namespace itk

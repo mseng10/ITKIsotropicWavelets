@@ -34,12 +34,8 @@ template< typename TInputImage,
 WaveletFrequencyInverseUndecimated< TInputImage, TOutputImage,
   TWaveletFilterBank >
 ::WaveletFrequencyInverseUndecimated()
-  : m_Levels(1),
-  m_HighPassSubBands(1),
-  m_TotalInputs(0),
-  m_ScaleFactor(2),
-  m_ApplyReconstructionFactors(true),
-  m_UseWaveletFilterBankPyramid(false)
+  
+  
 {
   this->SetNumberOfRequiredOutputs(1);
   this->m_WaveletFilterBank = WaveletFilterBankType::New();

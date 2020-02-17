@@ -30,10 +30,9 @@ RieszRotationMatrix< T, VImageDimension >
 ::RieszRotationMatrix()
   : Superclass(),
   m_SpatialRotationMatrix(),
-  m_Order(0),
-  m_Components(0),
-  m_MaxAbsoluteDifferenceCloseToZero(1 * itk::NumericTraits< ValueType >::epsilon()),
-  m_Debug(false)
+  
+  m_MaxAbsoluteDifferenceCloseToZero(1 * itk::NumericTraits< ValueType >::epsilon())
+  
 {
 }
 

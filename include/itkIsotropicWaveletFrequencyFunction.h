@@ -116,7 +116,7 @@ protected:
   ~IsotropicWaveletFrequencyFunction() override;
   void PrintSelf(std::ostream & os, Indent indent) const override;
 
-  unsigned int      m_HighPassSubBands;
+  unsigned int      m_HighPassSubBands{1};
   FunctionValueType m_FreqCutOff;
 };
 } // end namespace itk

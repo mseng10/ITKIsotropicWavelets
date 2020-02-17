@@ -27,7 +27,7 @@ namespace itk
 template< typename TInputImage, typename TOutputImage >
 PhaseAnalysisSoftThresholdImageFilter< TInputImage, TOutputImage >
 ::PhaseAnalysisSoftThresholdImageFilter()
-  : m_ApplySoftThreshold(true),
+  : 
   m_NumOfSigmas(2.0),
   m_MeanAmp(0),
   m_SigmaAmp(0),
