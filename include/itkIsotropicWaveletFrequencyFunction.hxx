@@ -35,8 +35,7 @@ IsotropicWaveletFrequencyFunction< TFunctionValue, VImageDimension, TInput >
 template< typename TFunctionValue, unsigned int VImageDimension, typename TInput >
 IsotropicWaveletFrequencyFunction< TFunctionValue, VImageDimension, TInput >
 ::~IsotropicWaveletFrequencyFunction()
-{
-}
+= default;
 
 template< typename TFunctionValue, unsigned int VImageDimension, typename TInput >
 void

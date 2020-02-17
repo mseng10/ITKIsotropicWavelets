@@ -34,8 +34,7 @@ VowIsotropicWavelet< TFunctionValue, VImageDimension, TInput >
 template< typename TFunctionValue, unsigned int VImageDimension, typename TInput >
 VowIsotropicWavelet< TFunctionValue, VImageDimension, TInput >
 ::~VowIsotropicWavelet()
-{
-}
+= default;
 
 template< typename TFunctionValue, unsigned int VImageDimension, typename TInput >
 void

@@ -128,7 +128,7 @@ public:
 
 protected:
   WaveletFrequencyFilterBankGenerator();
-  ~WaveletFrequencyFilterBankGenerator() override {}
+  ~WaveletFrequencyFilterBankGenerator() override = default;
   void PrintSelf(std::ostream & os, Indent indent) const override;
 
   void BeforeThreadedGenerateData() override;

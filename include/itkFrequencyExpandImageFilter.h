@@ -162,7 +162,7 @@ public:
 
 protected:
   FrequencyExpandImageFilter();
-  ~FrequencyExpandImageFilter() override {}
+  ~FrequencyExpandImageFilter() override = default;
   void PrintSelf(std::ostream & os, Indent indent) const override;
 
 

@@ -38,8 +38,7 @@ RieszFrequencyFunction< TFunctionValue, VImageDimension, TInput >
 template< typename TFunctionValue, unsigned int VImageDimension, typename TInput >
 RieszFrequencyFunction< TFunctionValue, VImageDimension, TInput >
 ::~RieszFrequencyFunction()
-{
-}
+= default;
 
 template< typename TFunctionValue, unsigned int VImageDimension, typename TInput >
 typename RieszFrequencyFunction< TFunctionValue, VImageDimension, TInput >::OutputComplexType
