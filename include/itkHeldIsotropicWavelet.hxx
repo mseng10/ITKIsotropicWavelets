@@ -28,8 +28,7 @@ template< typename TFunctionValue, unsigned int VImageDimension, typename TInput
 HeldIsotropicWavelet< TFunctionValue, VImageDimension, TInput >
 ::HeldIsotropicWavelet()
    
-{
-}
+= default;
 
 template< typename TFunctionValue, unsigned int VImageDimension, typename TInput >
 HeldIsotropicWavelet< TFunctionValue, VImageDimension, TInput >
