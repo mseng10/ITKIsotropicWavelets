@@ -139,7 +139,7 @@ runFrequencyShrinkTest( const std::string & inputImage, const std::string & outp
       {
       using ComplexFFTType = itk::ComplexToComplexFFTImageFilter< ComplexImageType >;
       auto complexInverseFFT = ComplexFFTType::New();
-      complexInverseFFT->SetTransformDirection( ComplexFFTType::INVERSE );
+      complexInverseFFT->SetTransformDirection( ComplexFFTType::TransformDirectionEnum::INVERSE );
       complexInverseFFT->SetInput( fftFilter->GetOutput() );
 
       complexInverseFFT->Update();
@@ -176,7 +176,7 @@ runFrequencyShrinkTest( const std::string & inputImage, const std::string & outp
       {
       using ComplexFFTType = itk::ComplexToComplexFFTImageFilter< ComplexImageType >;
       auto complexInverseFFT = ComplexFFTType::New();
-      complexInverseFFT->SetTransformDirection( ComplexFFTType::INVERSE );
+      complexInverseFFT->SetTransformDirection( ComplexFFTType::TransformDirectionEnum::INVERSE );
       complexInverseFFT->SetInput( shrinkFilter->GetOutput() );
 
       complexInverseFFT->Update();
